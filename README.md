@@ -43,3 +43,22 @@ cd customer-service
 mvn clean install
 
 The service will be available at http://localhost:8082/customer
+```
+---
+
+🔌 API Endpoints
+
+| Method | Endpoint                                  | Description            |
+| ------ | ----------------------------------------- | ---------------------- |
+| GET    | /api/v1/customers                         | Retrieve all customers |
+| GET    | /api/v1/customers/{customerId}            | Get a customer by ID   |
+| POST   | /api/v1/customers                         | Create a new customer  |
+| PUT    | /api/v1/customers/{customerId}            | Update customer info   |
+| PATCH  | /api/v1/customers/{customerId}/deactivate | Deactivate a customer  |
+| PATCH  | /api/v1/customers/{customerId}/activate   | Activate a customer    |
+| DELETE | /api/v1/customers/{customerId}            | Delete a customer      |
+
+---
+
+👤 Author
+Mohammad Zoubi
