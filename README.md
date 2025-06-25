@@ -46,7 +46,7 @@ The service will be available at http://localhost:8082/customer
 ```
 ---
 
-🔌 API Endpoints
+##  🔌 API Endpoints
 
 | Method | Endpoint                                  | Description            |
 | ------ | ----------------------------------------- | ---------------------- |
@@ -60,5 +60,12 @@ The service will be available at http://localhost:8082/customer
 
 ---
 
-👤 Author
+## 📌 API Documentation
+
+Once the service is up and running locally, you can access the Swagger UI here:
+
+- **Customer Service Swagger UI**: `http://localhost:8082/customer/swagger-ui/index.html`
+
+---
+##  👤 Author
 Mohammad Zoubi
