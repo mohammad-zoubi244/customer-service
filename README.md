@@ -41,9 +41,11 @@ A Spring Boot microservice responsible for managing customer data. This service 
 git clone https://github.com/mohammad-zoubi244/customer-service.git
 cd customer-service
 mvn clean install
-
-The service will be available at http://localhost:8082/customer
 ```
+Then, run the service (manually or using Docker Compose).
+The service will be accessible at:
+http://localhost:8082/customer
+
 ---
 
 ##  🔌 API Endpoints
@@ -85,8 +87,9 @@ After running the service, access the API documentation here:
  ---
 
  ## 📄 License
-This project is open for learning and demonstration purposes.
-You may use the MIT License or another permissive license.
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this software with proper attribution.
+See the LICENSE file for more details.
 
  ---
 ##  👤 Author
