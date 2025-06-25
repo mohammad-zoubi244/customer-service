@@ -38,7 +38,7 @@ A Spring Boot microservice responsible for managing customer data. This service 
 ### Clone & Run
 
 ```bash
-git clone https://github.com/your-username/customer-service.git
+git clone https://github.com/mohammad-zoubi244/customer-service.git
 cd customer-service
 mvn clean install
 
