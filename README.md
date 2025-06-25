@@ -10,7 +10,6 @@ A Spring Boot microservice responsible for managing customer data. This service 
 - RESTful APIs following best practices
 - Spring Boot 3 with layered architecture
 - PostgreSQL database integration
-- Dockerized setup for containerization
 - Clean, scalable codebase suitable for microservices environments
 
 ---
