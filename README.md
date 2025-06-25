@@ -60,12 +60,34 @@ The service will be available at http://localhost:8082/customer
 
 ---
 
-## 📌 API Documentation
+## 📘 API Documentation (Swagger UI)
+After running the service, access the API documentation here:
 
-Once the service is up and running locally, you can access the Swagger UI here:
+🔗 http://localhost:8082/customer/swagger-ui/index.html
 
 - **Customer Service Swagger UI**: `http://localhost:8082/customer/swagger-ui/index.html`
 
 ---
+
+## 🔮 Future Enhancements
+ Add request validation
+
+ Enable OpenAPI (Swagger) documentation
+
+ Integrate with order-service via REST or messaging
+
+ Add unit test coverage and CI/CD pipeline
+
+ Add centralized logging (e.g., ELK stack)
+
+ Add service registry and discovery (e.g., Eureka)
+
+ ---
+
+ ## 📄 License
+This project is open for learning and demonstration purposes.
+You may use the MIT License or another permissive license.
+
+ ---
 ##  👤 Author
 Mohammad Zoubi
