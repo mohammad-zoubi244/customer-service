@@ -10,7 +10,6 @@ A Spring Boot microservice responsible for managing customer data. This service 
 - RESTful APIs following best practices
 - Spring Boot 3 with layered architecture
 - PostgreSQL database integration
-- Dockerized setup for containerization
 - Clean, scalable codebase suitable for microservices environments
 
 ---
@@ -42,7 +41,7 @@ git clone https://github.com/mohammad-zoubi244/customer-service.git
 cd customer-service
 mvn clean install
 ```
-Then, run the service (manually or using Docker Compose).
+Then, run the service (manually).
 The service will be accessible at:
 http://localhost:8082/customer
 
@@ -77,6 +76,8 @@ After running the service, access the API documentation here:
  Enable OpenAPI (Swagger) documentation
 
  Integrate with order-service via REST or messaging
+
+ Add a Dockerfile for containerizing the service
 
  Add unit test coverage and CI/CD pipeline
 
