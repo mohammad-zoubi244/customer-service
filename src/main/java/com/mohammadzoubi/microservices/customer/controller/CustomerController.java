@@ -46,9 +46,9 @@ public class CustomerController {
 
     }
 
-    @GetMapping("/{CustomerId}")
+    @GetMapping("/{customerId}")
     public ResponseEntity<GetCustomerResponse> getCustomerById(
-            @PathVariable(name = "CustomerId") final Long customerId) {
+            @PathVariable(name = "customerId") final Long customerId) {
 
         final GetCustomerResponse customer = customerService.getCustomerById(customerId);
 
@@ -56,9 +56,9 @@ public class CustomerController {
 
     }
 
-    @PutMapping("/{CustomerId}")
+    @PutMapping("/{customerId}")
     public ResponseEntity<Void> updateCustomer(
-            @PathVariable(name = "CustomerId") final Long customerId,
+            @PathVariable(name = "customerId") final Long customerId,
             @RequestBody @Valid final UpdateCustomerRequest updateCustomerRequest
     ) {
 
@@ -67,9 +67,9 @@ public class CustomerController {
         return ResponseEntity.noContent().build();
     }
 
-    @PatchMapping("/{CustomerId}/activate")
+    @PatchMapping("/{customerId}/activate")
     public ResponseEntity<Void> activateCustomer(
-            @PathVariable(name = "CustomerId") final Long customerId) {
+            @PathVariable(name = "customerId") final Long customerId) {
 
         customerService.activateCustomer(customerId);
 
@@ -77,9 +77,9 @@ public class CustomerController {
 
     }
 
-    @PatchMapping("/{CustomerId}/deactivate")
+    @PatchMapping("/{customerId}/deactivate")
     public ResponseEntity<Void> deactivateCustomer(
-            @PathVariable(name = "CustomerId") final Long customerId) {
+            @PathVariable(name = "customerId") final Long customerId) {
 
         customerService.deactivateCustomer(customerId);
 
@@ -87,9 +87,9 @@ public class CustomerController {
 
     }
 
-    @DeleteMapping("/{CustomerId}")
+    @DeleteMapping("/{customerId}")
     public ResponseEntity<Void> deleteCustomer(
-            @PathVariable(name = "CustomerId") final Long customerId) {
+            @PathVariable(name = "customerId") final Long customerId) {
 
         customerService.deleteCustomer(customerId);
 
