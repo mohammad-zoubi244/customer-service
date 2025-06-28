@@ -71,19 +71,12 @@ After running the service, access the API documentation here:
 ---
 
 ## 🔮 Future Enhancements
- Add request validation
-
- Enable OpenAPI (Swagger) documentation
 
  Integrate with order-service via REST or messaging
 
  Add a Dockerfile for containerizing the service
 
  Add unit test coverage and CI/CD pipeline
-
- Add centralized logging (e.g., ELK stack)
-
- Add service registry and discovery (e.g., Eureka)
 
  ---
 
