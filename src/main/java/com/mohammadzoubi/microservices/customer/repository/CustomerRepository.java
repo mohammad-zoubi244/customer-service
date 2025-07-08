@@ -70,12 +70,4 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
     void updateCustomerStatus(@Param("customerId") Long customerId,
                               @Param("status") String status);
 
-//    @Query(value = "SELECT name," +
-//            " username," +
-//            " email," +
-//            " department," +
-//            " created_on," +
-//            " user_status" +
-//            " FROM task_manager.users",nativeQuery = true)
-//    Page<GetUserPojo> getUsersList(Pageable pageable);
 }
