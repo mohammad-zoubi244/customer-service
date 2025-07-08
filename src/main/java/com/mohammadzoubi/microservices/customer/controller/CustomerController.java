@@ -32,6 +32,12 @@ public class CustomerController {
 
     @GetMapping
     public ResponseEntity<GetAllCustomersResponse> getAllCustomers(
+            @RequestParam(name = "name",
+                    required = false) final String name,
+            @RequestParam(name = "phone-number",
+                    required = false) final String phoneNumber,
+            @RequestParam(name = "status",
+                    required = false) final String status,
             @RequestParam(name = "page-number",
                     defaultValue = SystemConfig.DEFAULT_PAGE_NUMBER,
                     required = false) final Integer pageNumber,
@@ -40,7 +46,12 @@ public class CustomerController {
                     required = false) final Integer pageSize
     ) {
 
-        final GetAllCustomersResponse customers = customerService.getAllCustomers(pageNumber, pageSize);
+        final GetAllCustomersResponse customers = customerService.getAllCustomers(
+                name,
+                phoneNumber,
+                status,
+                pageNumber,
+                pageSize);
 
         return ResponseEntity.status(HttpStatus.OK).body(customers);
 

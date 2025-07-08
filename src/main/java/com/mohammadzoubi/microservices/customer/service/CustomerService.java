@@ -48,6 +48,9 @@ public class CustomerService {
     }
 
     public GetAllCustomersResponse getAllCustomers(
+            final String name,
+            final String phoneNumber,
+            final String status,
             final Integer pageNumber,
             final Integer pageSize) {
 
@@ -56,7 +59,11 @@ public class CustomerService {
                 Sort.by(Sort.Direction.DESC,
                         SystemConfig.DEFAULT_CUSTOMER_SORTING));
 
-        Page<GetCustomersProjection> customersProjection = customerRepository.getCustomers(pageable);
+        Page<GetCustomersProjection> customersProjection =
+                customerRepository.getCustomers(name,
+                        phoneNumber,
+                        status,
+                        pageable);
 
         return GetAllCustomersResponse.builder()
                 .customers(GetAllCustomersResponse.mapper(customersProjection))

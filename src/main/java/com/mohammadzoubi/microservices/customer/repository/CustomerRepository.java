@@ -38,8 +38,14 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
                    status as status,
                    created_at as createdAt
             FROM customer
+            WHERE (:name IS NULL OR LOWER(name) LIKE CONCAT('%',:name,'%'))
+            AND (:phoneNumber IS NULL OR LOWER(phone_number) LIKE CONCAT('%',:phoneNumber,'%'))
+            AND (:status IS NULL OR LOWER(status) LIKE CONCAT('%',:status,'%'))
             """, nativeQuery = true)
-    Page<GetCustomersProjection> getCustomers(Pageable pageable);
+    Page<GetCustomersProjection> getCustomers(@Param("name") String name,
+                                              @Param("phoneNumber") String phoneNumber,
+                                              @Param("status") String status,
+                                              Pageable pageable);
 
     @Modifying
     @Transactional
